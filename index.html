@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Muzički instrumenti</title>
+<link rel="stylesheet" href="css/stil.css">
+<link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;500;700;800&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<script src="js/script.js"></script>
+</head>
+<style>
+@import url('https://fonts.googleapis.com/css2?family=Source+Sans+Pro:wght@400;600&display=swap');
+</style>
+<body>
+<div class="navigacija" id="myNavigacija">
+<a class="active">Početna</a>
+<a href="oautoru.html">O autoru</a>
+<a href="uputstvo.html">Uputstvo</a>
+<a href="javascript:void(0);" class="icon" onclick="myFunc()">
+<i class="fa fa-bars"></i>
+</a>
+</div>
+<br>
+<h1 class="logo">Muzički instrumenti</h1>
+
+<table class="tabela" align="center">
+
+<tr>
+<th>Naziv instrumenta</th>
+<th>Slika instrumenta</th>
+<th>Zvuk instrumenta</th>
+</tr>
+<tr>
+<td>Bubnjevi</td>
+<td><img src="img/bubnjevi.jpg" class="slika" onclick="BubnjeviOpen()"></img></td>
+<td><img src="img/zvucnik.png" class="zvucnik" onmouseover="slika(1)"></img></td>
+</tr>
+<tr>
+<td>Violončelo</td>
+<td><img src="img/violoncelo.jpg" class="slika" onclick="ViolonceloOpen()"></img></td>
+<td><img src="img/zvucnik.png" class="zvucnik" onmouseover="slika(2)"></img></td>
+</tr>
+<tr>
+<td>Orgulje</td>
+<td><img src="img/orgulje.jpg" class="slika" onclick="OrguljeOpen()"></img></td>
+<td><img src="img/zvucnik.png" class="zvucnik" onmouseover="slika(3)"></img></td>
+</tr>
+<td>Vibrafon</td>
+<td><img src="img/vibrafon.jpg" class="slika" onclick="VibrafonOpen()"></img></td>
+<td><img src="img/zvucnik.png" class="zvucnik" onmouseover="slika(4)"></img></td>
+</tr>
+<td>Klavir</td>
+<td><img src="img/klavir.jpg" class="slika" onclick="KlavirOpen()"></img></td>
+<td><img src="img/zvucnik.png" class="zvucnik" onmouseover="slika(5)"></img></td>
+</tr>
+<td>Gitara</td>
+<td><img src="img/gitara.jpg" class="slika" onclick="GitaraOpen()"></img></td>
+<td><img src="img/zvucnik.png" class="zvucnik" onmouseover="slika(6)"></img></td>
+</tr>
+
+<audio id="zvuk">
+
+</audio>
+
+</table>
+
+<script>
+function myFunc()
+{
+	var x = document.getElementById("myNavigacija");
+	if(x.className === "navigacija"){
+		x.className += " responsive";
+	}
+	else{
+		x.className = "navigacija";
+	}
+}
+</script>
+</body>
+</html>

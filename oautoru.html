@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Muzički instrumenti</title>
+<link rel="stylesheet" href="css/stil.css">
+<link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;500;700;800&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<script src="js/script.js"></script>
+</head>
+<style>
+@import url('https://fonts.googleapis.com/css2?family=Source+Sans+Pro:wght@400;600&display=swap');
+</style>
+<body>
+<div class="navigacija" id="myNavigacija">
+<a href="index.html">Početna</a>
+<a class="active" >O autoru</a>
+<a href="uputstvo.html">Uputstvo</a>
+<a href="javascript:void(0);" class="icon" onclick="myFunc()">
+<i class="fa fa-bars"></i>
+</a>
+</div>
+<br>
+<h1 class="logo">O autoru</h1>
+
+<p class="tekst">Ovaj veb sajt napravio je Nikola Ristić, programer i dizajner. Materijal za ovaj sajt je preuzet sa Vikipedije.</p>
+
+<script>
+function myFunc()
+{
+	var x = document.getElementById("myNavigacija");
+	if(x.className === "navigacija"){
+		x.className += " responsive";
+	}
+	else{
+		x.className = "navigacija";
+	}
+}
+</script>
+</body>
+</html>

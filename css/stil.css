@@ -1,0 +1,108 @@
+body{
+	font-family: 'Montserrat', sans-serif;
+}
+
+/*nav li{
+	display: inline;
+}
+nav{
+	text-align: center;	
+	background-color: #EDE355;
+	padding: 30px 60px;
+}
+nav a, nav span{
+	font-family: 'Montserrat', sans-serif;
+    font-size: 24px;
+	font-weight: bold;
+	padding: 30px 60px;
+}
+
+nav a{
+	text-decoration: none;
+	color: black;
+}*/
+.navigacija{
+	overflow: hidden;
+	text-align: center;	
+	padding: 30px 60px;
+	background: #ede355;
+}
+
+.navigacija a{
+	float: left;
+	display: inline;
+	color: black;
+	text-align: center;
+	padding: 10px 30px;
+	text-decoration: none;
+	font-size: 24px;
+}
+
+.navigacija a:hover{
+	color: #00d6fe;
+	background: #EDEA06;
+}
+
+.navigacija a.active{
+	background-color: #4caf50;
+	color: white;
+}
+
+.navigacija .icon{
+	display: none;
+}
+
+@media screen and (max-width: 850px)
+{
+	.navigacija a:not(:first-child) {display: none;}
+	.navigacija a.icon{
+		float: right;
+		display: block;
+	}
+}
+
+@media screen and (max-width: 850px)
+{
+	.navigacija.responsive {position: relative;}
+	.navigacija.responsive .icon{
+		position: absolute;
+		right: 0;
+		top: 0;
+	}
+	.navigacija.responsive a{
+		float: none;
+		display: block;
+		text-align: center;
+	}
+}
+
+
+.logo{
+	font-family: 'Source Sans Pro', sans-serif;
+	text-align: center;
+}
+
+.tabela th, td, tr{
+	border: 1px solid black;
+	padding: 20px 40px;
+}
+
+.slika{
+	margin: 0;
+	max-width: 50%;
+	min-width: 30%;
+}
+.zvucnik{
+	margin: 0;
+	max-width: 20%;
+}
+
+.tabela{
+	text-align: center;
+	width: 80%;
+	max-width: 90%;
+}
+
+.tekst{
+	font-size: 20px;
+}

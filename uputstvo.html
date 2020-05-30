@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Muzički instrumenti</title>
+<link rel="stylesheet" href="css/stil.css">
+<link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;500;700;800&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<script src="js/script.js"></script>
+</head>
+<style>
+@import url('https://fonts.googleapis.com/css2?family=Source+Sans+Pro:wght@400;600&display=swap');
+</style>
+<body>
+<div class="navigacija" id="myNavigacija">
+<a href="index.html">Početna</a>
+<a href="oautoru.html">O autoru</a>
+<a class="active" >Uputstvo</a>
+<a href="javascript:void(0);" class="icon" onclick="myFunc()">
+<i class="fa fa-bars"></i>
+</a>
+</div>
+<br>
+<h1 class="logo">Uputstvo za upotrebu</h1>
+
+<p class="tekst">Na ovom sajtu nalazi se 6 instrumenata i kada pređete mišem preko zvučnika (sa desne strane), čućete njihov zvuk. Ako kliknete mišem na instrument, to će vas odvesti na Wikipedia stranicu tih instrumenata.</p>
+<p class="tekst">Zvuci instrumenata su bazirani na kompozicijama i svako ima pravo da ih koristi u privatne svrhe.</p>
+<script>
+function myFunc()
+{
+	var x = document.getElementById("myNavigacija");
+	if(x.className === "navigacija"){
+		x.className += " responsive";
+	}
+	else{
+		x.className = "navigacija";
+	}
+}
+</script>
+</body>
+</html>
